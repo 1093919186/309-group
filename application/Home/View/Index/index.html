@@ -1,0 +1,125 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>中南大学309课题组</title>
+    <!-- Bootstrap -->
+    <link href="__ROOT__/public/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="__ROOT__/public/js/jquery-2.1.1.min.js"></script>
+    <script src="__ROOT__/public/js/bootstrap.min.js"></script>
+    <script src="__ROOT__/public/js/public.js"></script>
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="__ROOT__/public/css/index.css">
+</head>
+
+<body class="body-home">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-10">
+            <header><img src="__ROOT__/public/images/官网header.jpg" class="img-responsive" style="width: 100%"></header>
+
+            <include file="public:nav" />
+
+            <div class="col-md-12">
+
+                <div class="news"><a href="__APP__/News/index">新闻动态</a></div>
+
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <a href="{$toutu.links}"><img src="__ROOT__/{$toutu.imgpath}" alt="..." style="width: 100%;height:auto"></a>
+                            <!--<div class="carousel-caption">
+                                <p>第一张说明</p>
+                            </div>-->
+                        </div>
+                        <foreach name="lunbo" item="v">
+                        <div class="item">
+                            <a href="{$v.links}"><img src="__ROOT__/{$v.imgpath}" alt="..." style="width: 100%;height:auto"></a>
+                        </div>
+                        </foreach>
+                    </div>
+
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="news"><a href="__APP__/Academic/index">更多学术交流</a></div>
+                <div style="width: 100%;height: auto;border-top: 1px solid rgba(36, 139, 210, 0.9);">
+                    <foreach name="academic" item="v">
+                    <div class="col-md-4" style="text-align: center;background-color:#fff">
+
+                        <a href="__APP__/Academic/details/cid/{$v.id}"><img src="__ROOT__/{$v.imgpath}" style="width: 90%;margin-bottom: 10px;height: 180px"><br></a>
+                            <a href="__APP__/Academic/details/cid/{$v.id}">{$v.title|mb}...</a>
+                            <p>{$v.dateandtime|mbtime}</p>
+
+                    </div>
+                    </foreach>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="news"><a href="__APP__/Writings/chinapaper">中文论文</a></div>
+                <div style="width: 100%;height: 235px;background-color:#fff;border-top: 1px solid rgba(36, 139, 210, 0.9);">
+                    <ul class="inform">
+                        <foreach name="chpaper" item="v">
+                        <li><a href="__APP__/Writings/details/cid/{$v.id}">{$v.title|mb}...</a></li>
+                        </foreach>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="news"><a href="__APP__/Writings/englishpaper">英文论文</a></div>
+                <div style="width: 100%;height: 235px;background-color:#fff;border-top: 1px solid rgba(36, 139, 210, 0.9);">
+                    <ul class="inform">
+                        <foreach name="enpaper" item="v">
+                        <li><a href="__APP__/Writings/details/cid/{$v.id}">{$v.title|mbe}...</a></li>
+                        </foreach>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="news" style="background: none;background-color: #f8b300"><a style="color: white" href="__APP__/Writings/englishpaper">通知公告</a></div>
+                <div style="width: 100%;height: 235px;background-color:#f8b300;border-top: 1px solid #f8b300">
+                    <!--<ul class="inform">
+                        <foreach name="enpaper" item="v">
+                        <li><a href="__APP__/Writings/details/cid/{$v.id}">{$v.title|mbe}...</a></li>
+                        </foreach>
+                    </ul>-->
+                    <ul class="inform">
+                        <foreach name="info" item="v">
+                            <li><a style="color: white" href="__APP__/Affairs/details/cid/{$v.infoid}">{$v.title|mb}...</a></li>
+                        </foreach>
+                    </ul>
+                </div>
+            </div>
+
+            <include file="public:footer" />
+
+        </div>
+
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+
+<include file="public:top" />
+
+</body>
+</html>

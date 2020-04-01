@@ -1,0 +1,616 @@
+[ 2019-05-27T21:15:17+08:00 ] ::1 /309/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-05-27T21:15:17+08:00 ] ::1 /309/admin.php/Index/showcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-05-27T21:15:25+08:00 ] ::1 /309/admin.php/Index/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `admin` WHERE ( username='mxq741852963' && password='wsgly123789' )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-05-27T21:15:26+08:00 ] ::1 /309/admin.php/AdmAffairs/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info` LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `infoid`,`dateandtime`,`title`,`hints` FROM `info` ORDER BY dateandtime desc LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-05-27T21:15:28+08:00 ] ::1 /309/admin.php/AddContent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2019-05-27T21:15:31+08:00 ] ::1 /309/admin.php/AddContent/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-05-27T21:15:36+08:00 ] ::1 /309/admin.php/AddContent/addinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0060s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:' at line 1
+ [ SQL语句 ] : insert into info(title,content) values('测试','<p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;">一、概述</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-top: 7.8pt; margin-bottom: 7.8pt;"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;">1、活动主题</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="15" style="text-indent:23.0000pt;mso-char-indent-count:2.0000;"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;">凝聚力量，砥砺前行</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-top: 7.8pt; margin-bottom: 7.8pt;"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;">2、活动目的及意义</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="15" align="justify" style="text-indent:23.0000pt;mso-char-indent-count:2.0000;text-align:justify;
+text-justify:inter-ideograph;"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><font face="宋体">热爱生活，亲近自然，敬畏生命，拥抱健康，江湖子弟青衫老，踏破青山人未老，为了增强</font>309课题组成员间感情交流，增进成员间团结奋进的意识和精神，在这个毕业和收获的时节，在这个值得铭记，感伤和难以遗忘的时节，让我们不忘岁月，奋勇争先，在课题组举办的第十届登山活动中释放自我，提升意志与担当，共同交流与进步！</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p>
+
+                    ')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:' at line 1
+ [ SQL语句 ] : insert into info(title,content) values('测试','<p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;">一、概述</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-top: 7.8pt; margin-bottom: 7.8pt;"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;">1、活动主题</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="15" style="text-indent:23.0000pt;mso-char-indent-count:2.0000;"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;">凝聚力量，砥砺前行</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-top: 7.8pt; margin-bottom: 7.8pt;"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;">2、活动目的及意义</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="15" align="justify" style="text-indent:23.0000pt;mso-char-indent-count:2.0000;text-align:justify;
+text-justify:inter-ideograph;"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><font face="宋体">热爱生活，亲近自然，敬畏生命，拥抱健康，江湖子弟青衫老，踏破青山人未老，为了增强</font>309课题组成员间感情交流，增进成员间团结奋进的意识和精神，在这个毕业和收获的时节，在这个值得铭记，感伤和难以遗忘的时节，让我们不忘岁月，奋勇争先，在课题组举办的第十届登山活动中释放自我，提升意志与担当，共同交流与进步！</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p>
+
+                    ')
+
+[ 2019-05-27T21:16:27+08:00 ] ::1 /309/admin.php/AddContent/addinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0060s ]
+SQL: insert into info(title,content) values('测试','<p class="MsoNormal"><!--[if !supportLists]--><span style="font-family: 微软雅黑; letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">1、</span><!--[endif]--><span style="font-family: 微软雅黑; letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="微软雅黑">冬瓜、黄瓜、西瓜、南瓜都能吃，什么瓜不能吃？</font></span><span style="font-family: 微软雅黑; letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br></span><span style="font-family: 微软雅黑; letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="微软雅黑">答案：傻瓜</font></span><span style="font-family: 微软雅黑; letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><o:p></o:p></span></p><p class="MsoNormal"><span style="font-family: 微软雅黑; letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="微软雅黑">盆里有</font>6只馒头，</span></p>
+
+                    ') [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-05-27T21:16:29+08:00 ] ::1 /309/admin.php/AdmAffairs/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `infoid`,`dateandtime`,`title`,`hints` FROM `info` ORDER BY dateandtime desc LIMIT 0,20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-05-27T21:16:31+08:00 ] ::1 /309/admin.php/AdmAffairs/delinfo/iid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0070s ]
+SQL: DELETE FROM `info` WHERE ( infoid=3 ) [ RunTime:0.0320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-05-27T21:16:32+08:00 ] ::1 /309/admin.php/AdmAffairs/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `infoid`,`dateandtime`,`title`,`hints` FROM `info` ORDER BY dateandtime desc LIMIT 0,20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2019-05-27T21:16:59+08:00 ] ::1 /309/admin.php/AddContent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-05-27T21:17:00+08:00 ] ::1 /309/admin.php/AddContent/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-05-27T21:17:05+08:00 ] ::1 /309/admin.php/AddContent/addinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0050s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-ke' at line 1
+ [ SQL语句 ] : insert into info(title,content) values('测试','<p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;">一、概述</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-top: 7.8pt; margin-bottom: 7.8pt;"><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;">1、活动主题</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="15" style="text-indent:23.0000pt;mso-char-indent-count:2.0000;"><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;">凝聚力量，砥砺前行</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-top: 7.8pt; margin-bottom: 7.8pt;"><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;">2、活动目的及意义</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="15" align="justify" style="text-indent:23.0000pt;mso-char-indent-count:2.0000;text-align:justify;
+text-justify:inter-ideograph;"><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><font face="微软雅黑">热爱生活，亲近自然，敬畏生命，拥抱健康，江湖子弟青衫老，踏破青山人未老，为了增强</font>309课题组成员间感情交流，增进成员间团结奋进的意识和精神，在这个毕业和收获的时节，在这个值得铭记，感伤和难以遗忘的时节，让我们不忘岁月，奋勇争先，在课题组举办的第十届登山活动中释放自我，提升意志与担当，共同交流与进步！</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p>
+
+                    ')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-ke' at line 1
+ [ SQL语句 ] : insert into info(title,content) values('测试','<p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;">一、概述</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-top: 7.8pt; margin-bottom: 7.8pt;"><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;">1、活动主题</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="15" style="text-indent:23.0000pt;mso-char-indent-count:2.0000;"><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;">凝聚力量，砥砺前行</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-top: 7.8pt; margin-bottom: 7.8pt;"><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;">2、活动目的及意义</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="15" align="justify" style="text-indent:23.0000pt;mso-char-indent-count:2.0000;text-align:justify;
+text-justify:inter-ideograph;"><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><font face="微软雅黑">热爱生活，亲近自然，敬畏生命，拥抱健康，江湖子弟青衫老，踏破青山人未老，为了增强</font>309课题组成员间感情交流，增进成员间团结奋进的意识和精神，在这个毕业和收获的时节，在这个值得铭记，感伤和难以遗忘的时节，让我们不忘岁月，奋勇争先，在课题组举办的第十届登山活动中释放自我，提升意志与担当，共同交流与进步！</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:11.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p>
+
+                    ')
+
+[ 2019-05-27T21:19:15+08:00 ] ::1 /309/admin.php/AddContent/addinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0050s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-ke' at line 1
+ [ SQL语句 ] : insert into info(title,content) values('测试','<p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;">一、概述</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-top: 7.8pt; margin-bottom: 7.8pt;"><br></p>
+
+                    ')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-ke' at line 1
+ [ SQL语句 ] : insert into info(title,content) values('测试','<p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;">一、概述</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal" style="margin-top: 7.8pt; margin-bottom: 7.8pt;"><br></p>
+
+                    ')
+
+[ 2019-05-27T21:21:06+08:00 ] ::1 /309/admin.php/AddContent/addinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0080s ]
+SQL: insert into info(title,content) values('测试','<p class="MsoNormal"><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">按照答辩流程，先由答辩人导师介绍答辩人个人信息，随后答辩人介绍其学位论文研究内容，专家提问答辩人回答，答辩人宣读学位论文评阅人意见及答复，专家讨论答辩决议。参加这三场硕士学位论文答辩会的答辩人、指导老师及其论文题目如下：</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">1</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">、周建</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">卢毅屏教授</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">硫化铜镍矿混合浮选捕收剂研究；</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">2</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">、李祺</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">冯其明</font></span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">教授</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">二次铝灰中氮化铝水解行为研究；</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">3</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">、杨群</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">张国范教授</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">利用二次铝灰制备聚合氯化铝的研究；</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">4</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">、黄欢</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">张国范教授</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">基于两矿法的镍锰酸性浸出研究；</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">5</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">、高雅温</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">张国范教授</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">铜镍硫化矿浮选体系矿浆流变性研究；</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">6</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">、曾广圣</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">欧乐明教授</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">海藻酸钠在铜钼浮选分离中的应用研究；</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">7</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">、朱仔成</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">欧乐明教授</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">流态特性对微细粒铝土矿柱浮选的影响；</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">8</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">、陈康康</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">冯其明</font></span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">教授</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">硫化铜镍矿矿浆中离子组分分析及其对矿物浮选的影响研究；</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">9</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">、毛世意</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">欧乐明教授</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">/</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">提高城门山铜矿</font></span><span style="font-family: Calibri; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">KYF-50</span><span style="font-family: 宋体; color: rgb(0, 0, 0); letter-spacing: 0pt; font-size: 10.5pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="宋体">选硫浮选机选矿效率研究。</font></span><span style="font-family: Arial; color: rgb(25, 25, 25); letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><o:p></o:p></span></p>
+
+                    ') [ RunTime:0.0370s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-05-27T21:21:07+08:00 ] ::1 /309/admin.php/AdmAffairs/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `infoid`,`dateandtime`,`title`,`hints` FROM `info` ORDER BY dateandtime desc LIMIT 0,20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-05-27T21:21:13+08:00 ] ::1 /309/admin.php/AdmAffairs/delinfo/iid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0050s ]
+SQL: DELETE FROM `info` WHERE ( infoid=4 ) [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-05-27T21:21:14+08:00 ] ::1 /309/admin.php/AdmAffairs/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `infoid`,`dateandtime`,`title`,`hints` FROM `info` ORDER BY dateandtime desc LIMIT 0,20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-05-27T21:22:20+08:00 ] ::1 /309/admin.php/AddContent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-05-27T21:22:21+08:00 ] ::1 /309/admin.php/AddContent/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-05-27T21:22:26+08:00 ] ::1 /309/admin.php/AddContent/addinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0050s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:' at line 1
+ [ SQL语句 ] : insert into info(title,content) values('测试','<p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;">一、概述</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;">1、活动主题</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;">凝聚力量，砥砺前行</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;">2、活动目的及意义</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><font face="宋体">热爱生活，亲近自然，敬畏生命，拥抱健康，江湖子弟青衫老，踏破青山人未老，为了增强</font>309课题组成员间感情交流，增进成员间团结奋进的意识和精神，在这个毕业和收获的时节，在这个值得铭记，感伤和难以遗忘的时节，让我们不忘岁月，奋勇争先，在课题组举办的第十届登山活动中释放自我，提升意志与担当，共同交流与进步！</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p>
+
+                    ')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:' at line 1
+ [ SQL语句 ] : insert into info(title,content) values('测试','<p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;">一、概述</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;">1、活动主题</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;">凝聚力量，砥砺前行</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;">2、活动目的及意义</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><font face="宋体">热爱生活，亲近自然，敬畏生命，拥抱健康，江湖子弟青衫老，踏破青山人未老，为了增强</font>309课题组成员间感情交流，增进成员间团结奋进的意识和精神，在这个毕业和收获的时节，在这个值得铭记，感伤和难以遗忘的时节，让我们不忘岁月，奋勇争先，在课题组举办的第十届登山活动中释放自我，提升意志与担当，共同交流与进步！</span><span style="mso-spacerun:'yes';font-family:宋体;color:rgb(0,0,0);
+font-size:14.0000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p>
+
+                    ')
+
+[ 2019-05-27T21:23:27+08:00 ] ::1 /309/admin.php/AddContent/addinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0040s ]
+SQL: insert into info(title,content) values('','<p class="MsoNormal"><span style="font-family: Arial; color: rgb(25, 25, 25); letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="Arial">一、概述</font></span><span style="font-family: Arial; color: rgb(25, 25, 25); letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><o:p></o:p></span></p><p class="MsoNormal"><span style="font-family: Arial; color: rgb(25, 25, 25); letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">1、活动主题</span><span style="font-family: Arial; color: rgb(25, 25, 25); letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><o:p></o:p></span></p><p class="MsoNormal"><span style="font-family: Arial; color: rgb(25, 25, 25); letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="Arial">凝聚力量，砥砺前行</font></span><span style="font-family: Arial; color: rgb(25, 25, 25); letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><o:p></o:p></span></p><p class="MsoNormal"><span style="font-family: Arial; color: rgb(25, 25, 25); letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">2、活动目的及意义</span><span style="font-family: Arial; color: rgb(25, 25, 25); letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><o:p></o:p></span></p><p class="MsoNormal"><span style="font-family: Arial; color: rgb(25, 25, 25); letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="Arial">热爱生活，亲近自然，敬畏生命，拥抱健康，江湖子弟青衫老，踏破青山人未老，为了增强</font>309课题组成员间感情交流，增进成员间团结奋进的意识和精神，在这个毕业和收获的时节，在这个值得铭记，感伤和难以遗忘的时节，让我们不忘岁月，奋勇争先，在课题组举办的第十届登山活动中释放自我，提升意志与担当，共同交流与进步！</span><span style="font-family: Arial; color: rgb(25, 25, 25); letter-spacing: 0pt; font-size: 12pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><o:p></o:p></span></p>
+
+                    ') [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-05-27T21:23:29+08:00 ] ::1 /309/admin.php/AdmAffairs/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `infoid`,`dateandtime`,`title`,`hints` FROM `info` ORDER BY dateandtime desc LIMIT 0,20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-05-27T21:25:05+08:00 ] ::1 /309/admin.php/AdmAffairs/delinfo/iid/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0040s ]
+SQL: DELETE FROM `info` WHERE ( infoid=5 ) [ RunTime:0.0570s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-05-27T21:25:07+08:00 ] ::1 /309/admin.php/AdmAffairs/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `info` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `infoid`,`dateandtime`,`title`,`hints` FROM `info` ORDER BY dateandtime desc LIMIT 0,20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

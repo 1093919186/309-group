@@ -1,0 +1,60 @@
+<html>
+
+<include file="public:header" />
+
+<body>
+<!--导航-->
+<include file="public:nav" />
+<!--end-->
+
+<!--content-->
+<div class="container" id="content">
+    <div class="row">
+        <!--left-->
+        <div class="col-md-3 col-sm-5">
+            <div class="list-group">
+                <a href="__APP__/AdmImg/index" class="list-group-item" style="font-family: '微软雅黑', '黑体'">网站图片</a>
+                <a href="__APP__/AdmImg/upPic" class="list-group-item" style="font-family: '微软雅黑', '黑体'">上传图片</a>
+                <a href="__APP__/AdmImg/outPic" class="list-group-item active" style="font-family: '微软雅黑', '黑体'">外部图片</a>
+            </div>
+        </div>
+        <!--end-->
+        <!--右侧-->
+        <div class="col-md-9 col-sm-7">
+            <ul class="breadcrumb">
+                <li>309CMS</li>
+                <li style="font-family: '微软雅黑', '黑体'">发布内容</li>
+                <li class="active" style="font-family: '微软雅黑', '黑体'">外部图片</li>
+            </ul>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th>Img</th>
+                        <th>Operate</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="img" item="v">
+                        <tr>
+                            <td style="font-family: '微软雅黑', '黑体'"><img src="__ROOT__/{$v.imgpath}" style="width: 100px;height: 50px"></td>
+                            <td><a href="__APP__/AdmImg/deloutpic/oid/{$v.id}" style="font-family: '微软雅黑', '黑体';color: red;margin-left: 20px">删除</a></td></td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+                <nav class="pull-right">
+                    {$page}
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end-->
+
+<!--footer-->
+<include file="public:footer" />
+<!--end-->
+
+</body>
+</html>

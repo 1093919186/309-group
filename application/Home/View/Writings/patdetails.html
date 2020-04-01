@@ -1,0 +1,47 @@
+<html>
+
+<title>{$paper.title}</title>
+<include file="public:header" />
+
+<style>
+    .post-content img{
+        width: 65%;
+    }
+</style>
+
+<body class="body-home">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-10">
+            <header><img src="__ROOT__/public/images/官网header.jpg" class="img-responsive" style="width: 100%"></header>
+
+            <include file="public:nav" />
+
+            <main class="col-md-12" style="background-color: #fff;margin: 10px 0;">
+                <article id=111 class="post">
+                    <div class="post-head">
+                        <h2>{$patent.name}</h2>
+                    </div>
+                    <div class="post-content">
+                        {$patent.content}
+                        <br><br>
+                    </div>
+                </article>
+
+            </main>
+
+            <include file="public:footer" />
+
+        </div>
+
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+<include file="public:top" />
+
+</body>
+</html>

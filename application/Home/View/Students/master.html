@@ -1,0 +1,53 @@
+<html>
+
+<title>毕业硕士</title>
+<include file="public:header" />
+
+<body class="body-home">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-10">
+            <header><img src="__ROOT__/public/images/官网header.jpg" class="img-responsive" style="width: 100%"></header>
+
+            <include file="public:nav" />
+
+            <div class="col-md-3" id="left-list">
+                <div class="list-group" style="text-align: center">
+                    <a href="__APP__/Students/index" class="list-group-item" >毕业博士</a>
+                    <a href="__APP__/Students/readdoctor" class="list-group-item" >在读博士</a>
+                    <a href="__APP__/Students/master" class="list-group-item active" >毕业硕士</a>
+                    <a href="__APP__/Students/readmaster" class="list-group-item" >在读硕士</a>
+                </div>
+            </div>
+
+            <!--右侧-->
+            <div class="col-md-9">
+                <ul class="breadcrumb" style="background: url('__ROOT__/public/images/小导航.jpg');">
+                    <li>309</li>
+                    <li>研究生培养</li>
+                    <li>毕业硕士</li>
+                </ul>
+                <foreach name="master" item="v">
+                <div class="col-md-4" style="text-align: center">
+                    <img src="__ROOT__/{$v.imgpath}" class="img-thumbnail" style="width: 80%">
+                    <h5><a href="__APP__/Teachers/details/cid/{$v.id}">{$v.name}</a></h5>
+                </div>
+                </foreach>
+            </div>
+            <!--end-->
+
+            <include file="public:footer" />
+
+        </div>
+
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+<include file="public:top" />
+
+</body>
+</html>

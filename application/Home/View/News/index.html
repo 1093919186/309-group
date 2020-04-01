@@ -1,0 +1,46 @@
+<html>
+
+<title>新闻动态</title>
+
+<include file="public:header" />
+
+<body class="body-home">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-10">
+            <header><img src="__ROOT__/public/images/官网header.jpg" class="img-responsive" style="width: 100%"></header>
+
+            <include file="public:nav" />
+
+            <div class="table-responsive" style="margin-top: 10px">
+                <table class="table table-bordered table-hover" style="background-color: #fff;">
+                    <tbody style="font-size: 10px">
+                    <foreach name="news" item="v">
+                        <tr>
+                            <td><a style="font-size: 13px" href="__APP__/News/details/cid/{$v.id}">{$v.title}</a></td>
+                            <td style="font-size: 13px">{$v.dateandtime|mbtime}</td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+
+                <nav class="pull-right" style="margin-bottom: 10px">
+                    {$page}
+                </nav>
+            </div>
+
+            <include file="public:footer" />
+
+        </div>
+
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+<include file="public:top" />
+
+</body>
+</html>

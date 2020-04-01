@@ -1,0 +1,55 @@
+<html>
+
+<title>{$paper.title}</title>
+<include file="public:header" />
+
+<style>
+    .post-content img{
+        width: 65%;
+    }
+</style>
+
+<body class="body-home">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-10">
+            <header><img src="__ROOT__/public/images/官网header.jpg" class="img-responsive" style="width: 100%"></header>
+
+            <include file="public:nav" />
+
+            <main class="col-md-12" style="background-color: #fff;margin: 10px 0;">
+                <article id=111 class="post">
+                    <div class="post-head">
+                        <h2>{$paper.title}</h2>
+                        <div class="post-meta">
+                            <span class="author">浏览：{$paper.hints}</span> &bull;
+                            <span class="author">作者：{$paper.writer}</span> &bull;
+                            <time class="post-date">{$paper.dateandtime|mbtime}</time>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        {$paper.content}
+                        <br><br>
+                        <a href="{$paper.link}">{$paper.link}</a>
+                        <p style="margin-top: 10px">附件【<a href="__ROOT__/{$paper.loads}">{$paper.title}</a>】</p>
+                    </div>
+                </article>
+
+
+            </main>
+
+            <include file="public:footer" />
+
+        </div>
+
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+<include file="public:top" />
+
+</body>
+</html>

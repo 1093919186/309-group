@@ -1,0 +1,50 @@
+<html>
+
+<title>{$pab.name}</title>
+<include file="public:header" />
+
+<style>
+    .post-content img{
+        width: 65%;
+    }
+</style>
+
+<body class="body-home">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-10">
+            <header><img src="__ROOT__/public/images/官网header.jpg" class="img-responsive" style="width: 100%"></header>
+
+            <include file="public:nav" />
+
+            <main class="col-md-12" style="background-color: #fff;margin: 10px 0;">
+                <article id=111 class="post">
+                    <div class="col-md-3">
+                        <h2>{$pab.name}</h2>
+                        <div class="post-meta">
+                            <img src="__ROOT__/{$pab.imgpath}" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-md-9" style="margin-top: 20px">
+                        {$pab.content}
+                    </div>
+                </article>
+
+
+            </main>
+
+            <include file="public:footer" />
+
+        </div>
+
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+<include file="public:top" />
+
+</body>
+</html>

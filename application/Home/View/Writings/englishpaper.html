@@ -1,0 +1,63 @@
+<html>
+
+<title>英文论文</title>
+<include file="public:header" />
+
+<body class="body-home">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-10">
+            <header><img src="__ROOT__/public/images/官网header.jpg" class="img-responsive" style="width: 100%"></header>
+
+            <include file="public:nav" />
+
+            <div class="col-md-3" id="left-list">
+                <div class="list-group" style="text-align: center">
+                    <a href="__APP__/Writings/index" class="list-group-item" >出版著作</a>
+                    <a href="__APP__/Writings/chinapaper" class="list-group-item" >中文论文</a>
+                    <a href="__APP__/Writings/englishpaper" class="list-group-item active" >英文论文</a>
+                    <a href="__APP__/Writings/patent" class="list-group-item" >授权、申请专利</a>
+                </div>
+            </div>
+
+            <!--右侧-->
+            <div class="col-md-9">
+                <ul class="breadcrumb" style="background: url('__ROOT__/public/images/小导航.jpg');">
+                    <li>309</li>
+                    <li>著作专利</li>
+                    <li>英文论文</li>
+                </ul>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover" style="background-color: #fff;">
+                        <tbody style="font-size: 10px">
+                        <foreach name="englishpaper" item="v">
+                        <tr>
+                            <td><a href="__APP__/Writings/details/cid/{$v.id}">{$v.title}</a></td>
+                            <td>{$v.dateandtime|mbtime}</td>
+                        </tr>
+                        </foreach>
+                        </tbody>
+                    </table>
+
+                    <nav class="pull-right" style="margin-bottom: 10px">
+                        {$page}
+                    </nav>
+                </div>
+            </div>
+            <!--end-->
+
+            <include file="public:footer" />
+
+        </div>
+
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+<include file="public:top" />
+
+</body>
+</html>
